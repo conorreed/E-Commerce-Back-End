@@ -16,3 +16,8 @@ sequelize.sync({ force: false }).then(() => {
     console.log(`App listening on port ${PORT}!`);
   });
 });
+
+const expressListEndpoints = require('express-list-endpoints');
+
+// Log all routes
+console.log(expressListEndpoints(app));
