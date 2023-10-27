@@ -14,14 +14,14 @@ ProductTag.init(
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'product', // This should match the name of the Product model
+        model: 'product', 
         key: 'id',
       },
     },
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'tag', // This should match the name of the Tag model
+        model: 'tag', 
         key: 'id',
       },
     },
